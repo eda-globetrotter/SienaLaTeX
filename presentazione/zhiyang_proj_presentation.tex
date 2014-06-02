@@ -1,0 +1,165 @@
+%	This is written by Zhiyang Ong for his presentation about his term project for the class, ``ECEN 751 Advanced Computational Methods for Integrated System Design,'' in Spring 2014 at Texas A&M University.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Preamble
+
+%	Use the Beamer package to create the presentation slides.
+\documentclass[xcolor={usenames,dvipsnames},hyperref={hyperindex,bookmarks}]{beamer}
+%	Background color: Set it to blue.
+%\setbeamercolor{background canvas}{bg=blue}
+%	\setbeamercolor{normal text}{bg=white,fg=yellow}
+%\setbeamercolor{normal text}{fg=white}
+%	\setbeamercolor{title}{fg=yellow,bg=white}
+%\setbeamercolor{title}{fg=yellow}
+%	\setbeamercolor{titlelike}{fg=yellow,bg=white}
+%\setbeamercolor{block title alerted}{fg=white,bg=yellow}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Table of Contents
+%	\AtBeginSection[]
+%	{
+%		\begin{frame}
+%			\frametitle{\textcolor{yellow}{Table of Contents}}
+%			\textcolor{yellow}{\tableofcontents[currentsection]}
+%	%		\tableofcontents[currentsection,currentsubsection]
+%		\end{frame}
+%	}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Main document
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Slide 1
+
+%	Set the background picture.
+{
+%\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{./pics/cover}}
+
+	\title[Cover] % (optional, only for long titles)
+%	{Optimization Framework for Cancer Radiation Therapy}
+	{Pattern Recognition-based Reconstruction \\of Neural Networks}
+	\subtitle{From Fluorescence Imaging of Neural Activity}
+	\author[Author, Anders] % (optional, for multiple authors)
+	{Zhiyang Ong}%	\inst{a}}
+	\institute[TAMU] % (optional)
+	{
+		%\inst{a}
+		Department of Electrical and Computer Engineering \\
+		Dwight Look College of Engineering \\
+		Texas A\&M University \\
+		College Station, TX
+	}
+	\date{\today} % (optional)
+	%\subject{Discrete Optimization}
+	\frame{\titlepage}
+%	For setting the background picture.
+}
+
+%	AUTHOR, ``TITLE,'' in {\it The New York Times: The Opinion Pages: Op-Ed Contributor}, The New York Times Company, New York, NY, MONTH DATE, YEAR.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Acknowledgments
+
+%	\begin{frame}
+%		\frametitle{\textcolor{yellow}{Acknowledgments}}
+%		Dr. Sani Nassif, Research Staff Member at IBM Research \\
+%		\ \\
+%		Prateek Tandon, Ph.D. student at Carnegie Mellon University's Robotics Institute \\
+%		\ \\
+%		Dr. Alexander Mitev, embedded systems engineer
+%	\end{frame}
+
+
+
+
+%\section{Test section one}
+
+%	  \begin{frame}
+%	    %\frametitle{\textcolor{yellow}{This is the second slide}}
+%	    \frametitle{This is the second slide}
+%	    %\framesubtitle{\textcolor{Green}{A bit more information about this}}
+%	    \framesubtitle{A bit more information about this}
+%	    %More content goes here
+%	    Greetings \cite[slide 9]{Ganesh2013}
+%	    \textcolor{white}{Hello World!}
+%	  \end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Slide 2
+\begin{frame}
+	\frametitle{Background Information \& Existing Approaches}
+	\framesubtitle{Techniques for Pattern Recognition of Structural Properties of the Brain}
+	
+	\begin{columns}[t] % contents are top vertically aligned
+		\begin{column}[T]{5cm} % each column can also be its own environment
+		
+		Problem: Inadequate knowledge of the structure of the human connectome, which can facilitate medical diagnosis and treatment. \\
+		\ \\
+		Objective: Determine connectivity of neural network via pattern recognition. \\
+		\ \\
+		Existing solutions: statistical causal inference, score-based methods
+		\end{column}
+		
+		\begin{column}[T]{5cm} % alternative top-align that's better for graphics
+			\begin{figure}
+			\centering
+			\includegraphics[height=2.8in]{./pics/data_pdtn_wkflow2}
+%			\caption{Workflow for wetware- and software-/challenge- based neural network reconstruction: (a) workflow used to construct the neural network using wetware \cite{ChaLearn2014a,Stetter2012}}
+			\end{figure}
+		\end{column}
+	\end{columns}
+\end{frame}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Slide 3
+\begin{frame}
+	\frametitle{Proposed Approach}
+	\framesubtitle{Description of attempted solutions.}
+	
+	Use the workflow from the Kaggle competition \cite{ChaLearn2014a,Stetter2012} to determine the connectivity of a neuron $n_{i}$ and other neurons $n_{j}, \forall j \in N = \{n_{1}, n_{2}, \dots, n_{m}\}$ that is connected to its dendrites (inputs) and axons (outputs). \\
+	\ \\
+	Focus on pattern recognition via semidefinite programming-based support vector machine\dots\ Battle with the No Free Lunch theorem. \\
+	\ \\
+	Modified focus on observed time series, with a focus on techniques of statistical causal inference that can capture spatio-temporal dynamics.
+\end{frame}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Slide 4
+\begin{frame}
+	\frametitle{Experimental Results \& Conclusions}
+	\framesubtitle{Analysis of Experimental Data and Conclusions}
+	
+	\begin{figure}
+		\centering
+		\includegraphics[height=2.6in]{./pics/work_in_progress2}
+%		\caption{Workflow for wetware- and software-/challenge- based neural network reconstruction: (a) workflow used to construct the neural network using wetware \cite{ChaLearn2014a,Stetter2012}}
+	\end{figure}
+\end{frame}
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Slide 5
+%	References
+{\linespread{1}
+\begin{frame}
+	\frametitle{References}
+	\bibliographystyle{plain}
+	\bibliography{/data/research/antipastobibtex/references}
+\end{frame}
+}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
