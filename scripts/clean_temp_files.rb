@@ -32,7 +32,7 @@
  
  	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  
- 	Email address: echo "-wb- cukj 23wU4X5M589 UNIX cqkz wM poiuy" | awk '{ sub("23wU4X5M589","F.d_c_b. "); print $5, $1,$6; for (i=1; i<=1; i++) print "6\b"; print $3, $2 }' | sed y/kqcbuwM6/gnotracm/ | tr -d [:cntrl:] | tr Fj " ""\n"
+ 	Email address: echo "cukj -wb- 23wU4X5M589 TROJANS cqkH wiuz2y 0f Mw Stanford" | awk '{ sub("23wU4X5M589","F.d_c_b. ") sub("Stanford","d0mA1n"); print $5, $2, $8; for (i=1; i<=1; i++) print "6\b"; print $9, $7, $6 }' | sed y/kqcbuHwM62z/gnotrzadqmC/ | tr 'q' ' ' | tr -d [:cntrl:] | tr -d 'ir' | tr y "\n"
  =end
 
 
@@ -111,16 +111,16 @@ def remove_temp(s_dir, file_ext)
 			if temp_i[-1].chr.eql?("~")
 				# Delete the file
 				File.delete(temp_i)
-				system("hg remove -f #{temp_i}")
-#				system("git rm #{temp_i}")
+#				system("hg remove -f #{temp_i}")
+				system("git rm #{temp_i}")
 			else
 				# For each type of file extension
 				for f_ext in file_ext
 					# Does this file end with a specified file extension
 					if (File.extname(temp_i)).eql?(f_ext)
 						# Delete the file from repository and local file system.
-						system("hg remove -f #{temp_i}")
-#						system("git rm #{temp_i}")
+#						system("hg remove -f #{temp_i}")
+						system("git rm #{temp_i}")
 						File.delete(temp_i)
 						# Ignore remaining file extensions
 						break

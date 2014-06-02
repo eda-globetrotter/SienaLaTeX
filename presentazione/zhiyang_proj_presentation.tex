@@ -1,4 +1,16 @@
-%	This is written by Zhiyang Ong for his presentation about his term project for the class, ``ECEN 751 Advanced Computational Methods for Integrated System Design,'' in Spring 2014 at Texas A&M University.
+%	This LaTeX file is written by Zhiyang Ong as a template for creating presentation slides.
+
+%	The MIT License (MIT)
+
+%	Copyright (c) <2014> <Zhiyang Ong>
+
+%	Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+%	The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+%	Email address: echo "cukj -wb- 23wU4X5M589 TROJANS cqkH wiuz2y 0f Mw Stanford" | awk '{ sub("23wU4X5M589","F.d_c_b. ") sub("Stanford","d0mA1n"); print $5, $2, $8; for (i=1; i<=1; i++) print "6\b"; print $9, $7, $6 }' | sed y/kqcbuHwM62z/gnotrzadqmC/ | tr 'q' ' ' | tr -d [:cntrl:] | tr -d 'ir' | tr y "\n"
 
 
 
@@ -19,15 +31,17 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Table of Contents
-%	\AtBeginSection[]
-%	{
-%		\begin{frame}
-%			\frametitle{\textcolor{yellow}{Table of Contents}}
-%			\textcolor{yellow}{\tableofcontents[currentsection]}
-%	%		\tableofcontents[currentsection,currentsubsection]
-%		\end{frame}
-%	}
+\AtBeginSection[]
+{
+	\begin{frame}
+%		\frametitle{\textcolor{yellow}{Table of Contents}}
+		\frametitle{Table of Contents}
+%		\textcolor{yellow}{\tableofcontents[currentsection]}
+		\tableofcontents[currentsection,currentsubsection]
+	\end{frame}
+}
 
+%	IMPORTANT: Note that entries for the Table of Contents are indicated by sections and subsections.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -40,111 +54,115 @@
 
 %	Set the background picture.
 {
-%\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{./pics/cover}}
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight,keepaspectratio]{./pics/backgnd}}
 
-	\title[Cover] % (optional, only for long titles)
-%	{Optimization Framework for Cancer Radiation Therapy}
-	{Pattern Recognition-based Reconstruction \\of Neural Networks}
-	\subtitle{From Fluorescence Imaging of Neural Activity}
-	\author[Author, Anders] % (optional, for multiple authors)
-	{Zhiyang Ong}%	\inst{a}}
-	\institute[TAMU] % (optional)
-	{
-		%\inst{a}
-		Department of Electrical and Computer Engineering \\
-		Dwight Look College of Engineering \\
-		Texas A\&M University \\
-		College Station, TX
+	\title[Cover Title]
+	{Title of My Presentation}
+	\subtitle{A Presentation Made In \LaTeX}
+	\author{Nome1 Cognome1\inst{1} \and Nome2 Cognome2\inst{2}}
+	\institute{
+		\inst{1}
+		Department1, Division1 \\
+		Organization1 \\
+		City1, State1 \\
+		Country1
+		\and
+		\inst{2}
+		Department2, Division2 \\
+		Organization2 \\
+		City2, State2 \\
+		Country2
 	}
-	\date{\today} % (optional)
-	%\subject{Discrete Optimization}
+	\date{\today}	% (optional)
+	\subject{Subject Title}
 	\frame{\titlepage}
 %	For setting the background picture.
 }
 
-%	AUTHOR, ``TITLE,'' in {\it The New York Times: The Opinion Pages: Op-Ed Contributor}, The New York Times Company, New York, NY, MONTH DATE, YEAR.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Section One
+\section{Section One}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Acknowledgments
+%	Slide 2
 
-%	\begin{frame}
-%		\frametitle{\textcolor{yellow}{Acknowledgments}}
-%		Dr. Sani Nassif, Research Staff Member at IBM Research \\
-%		\ \\
-%		Prateek Tandon, Ph.D. student at Carnegie Mellon University's Robotics Institute \\
-%		\ \\
-%		Dr. Alexander Mitev, embedded systems engineer
-%	\end{frame}
+\begin{frame}
+	\frametitle{Acknowledgments}
+	Name1, Organization1 \\
+	\ \\
+	Name2, Organization2 \\
+	\ \\
+	Name3, Organization3
+\end{frame}
 
-
-
-
-%\section{Test section one}
-
-%	  \begin{frame}
-%	    %\frametitle{\textcolor{yellow}{This is the second slide}}
-%	    \frametitle{This is the second slide}
-%	    %\framesubtitle{\textcolor{Green}{A bit more information about this}}
-%	    \framesubtitle{A bit more information about this}
-%	    %More content goes here
-%	    Greetings \cite[slide 9]{Ganesh2013}
-%	    \textcolor{white}{Hello World!}
-%	  \end{frame}
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Section Two
+\section{Section Two}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	Slide 2
-\begin{frame}
-	\frametitle{Background Information \& Existing Approaches}
-	\framesubtitle{Techniques for Pattern Recognition of Structural Properties of the Brain}
-	
-	\begin{columns}[t] % contents are top vertically aligned
-		\begin{column}[T]{5cm} % each column can also be its own environment
-		
-		Problem: Inadequate knowledge of the structure of the human connectome, which can facilitate medical diagnosis and treatment. \\
-		\ \\
-		Objective: Determine connectivity of neural network via pattern recognition. \\
-		\ \\
-		Existing solutions: statistical causal inference, score-based methods
-		\end{column}
-		
-		\begin{column}[T]{5cm} % alternative top-align that's better for graphics
-			\begin{figure}
-			\centering
-			\includegraphics[height=2.8in]{./pics/data_pdtn_wkflow2}
-%			\caption{Workflow for wetware- and software-/challenge- based neural network reconstruction: (a) workflow used to construct the neural network using wetware \cite{ChaLearn2014a,Stetter2012}}
-			\end{figure}
-		\end{column}
-	\end{columns}
-\end{frame}
-
+%	Subsection 2.1
+\subsection{Subsection 2.1}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Slide 3
 \begin{frame}
-	\frametitle{Proposed Approach}
-	\framesubtitle{Description of attempted solutions.}
+	\frametitle{Slide Title 3}
+	\framesubtitle{Slide Subtitle 3}
 	
-	Use the workflow from the Kaggle competition \cite{ChaLearn2014a,Stetter2012} to determine the connectivity of a neuron $n_{i}$ and other neurons $n_{j}, \forall j \in N = \{n_{1}, n_{2}, \dots, n_{m}\}$ that is connected to its dendrites (inputs) and axons (outputs). \\
-	\ \\
-	Focus on pattern recognition via semidefinite programming-based support vector machine\dots\ Battle with the No Free Lunch theorem. \\
-	\ \\
-	Modified focus on observed time series, with a focus on techniques of statistical causal inference that can capture spatio-temporal dynamics.
+	\begin{columns}[t]			% Contents are top vertically aligned
+		\begin{column}[T]{5cm}	% Each column can also be its own environment
+		
+		Statement 1. \\
+		\ \\
+		Statement 2. \\
+		\ \\
+		Statement 3.
+		\end{column}
+		
+		\begin{column}[T]{5cm}	% Alternative top-align that's better for graphics
+			\begin{figure}
+			\centering
+			\includegraphics[height=2in]{./pics/my_figure}
+			\caption{My caption \cite{Petroski1992,Kopka2004}}
+			\end{figure}
+		\end{column}
+	\end{columns}
 \end{frame}
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Subsection 2.2
+\subsection{Subsection 2.2}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %	Slide 4
 \begin{frame}
-	\frametitle{Experimental Results \& Conclusions}
-	\framesubtitle{Analysis of Experimental Data and Conclusions}
+	\frametitle{Slide Title 4}
+	\framesubtitle{Slide Subtitle 4.}
+	
+	Statement 1 \cite{vanDongen2012}. \\
+	\ \\
+	Statement 2. \\
+	\ \\
+	Statement 3.
+\end{frame}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Section 3
+\section{Section 3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Slide 5
+\begin{frame}
+	\frametitle{Slide Title 5}
+	\framesubtitle{Slide Subtitle 5.}
 	
 	\begin{figure}
 		\centering
-		\includegraphics[height=2.6in]{./pics/work_in_progress2}
-%		\caption{Workflow for wetware- and software-/challenge- based neural network reconstruction: (a) workflow used to construct the neural network using wetware \cite{ChaLearn2014a,Stetter2012}}
+		\includegraphics[height=2.6in]{./pics/my_figure}
+		\caption{Caption \#2}
 	\end{figure}
 \end{frame}
 
@@ -152,13 +170,13 @@
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%	Slide 5
+%	Slide 6
 %	References
 {\linespread{1}
 \begin{frame}
 	\frametitle{References}
 	\bibliographystyle{plain}
-	\bibliography{/data/research/antipastobibtex/references}
+	\bibliography{references}
 \end{frame}
 }
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
