@@ -34,9 +34,10 @@ This contains templates for LaTeX documents that I tend to create, LaTeX structu
 
 This repository is organized as follows:
 1)	Documents for this projects that are in the text file format. E.g., LICENSE.md and README.md.
-2)	curriculum_vitae: LaTeX templates for curriculum vitaes and resumes.
-3)	presentazione: LaTeX templates for creating presentation slides.
-4)	rapporto: A LaTeX template for reports.
+2)	articoli: A LaTeX template for articles.
+3)	curriculum_vitae: A LaTeX template for curriculum vitaes and resumes.
+4)	presentazione: A LaTeX template for creating presentation slides.
+5)	rapporto: A LaTeX template for reports.
 
 
 

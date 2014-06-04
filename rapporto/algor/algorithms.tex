@@ -20,25 +20,32 @@
 \chapter{Algorithms}
 \label{chp:Algorithms}
 
+A template for typesetting algorithms is shown in {\sc Procedure} \ref{lst:MyAlgorithm}.
 
 \begin{codebox}
 \Procname{$\proc{NAME OF THE ALGORITHM}({\it ARGUMENTS})$}
-\label{lst:LABEL}
+\label{lst:MyAlgorithm}
 \zi \Comment {\it Input ARGUMENT \#1: Definition1}
 \zi \Comment {\it Input ARGUMENT \#2: Definition2}
 \li BODY OF THE PROCEDURE
+\zi \Comment {\it A while loop.}
 \li \While [condition]
 	\Do
 \li	[Something]
 	\End
+\zi \Comment {\it A for loop.}
 \li \For \id{Var} $\gets$ [initial value] \To [final value]
 	\Do
 \li	[Something]
 	\End
-\li	\If $[$Condition$]$
+\zi \Comment {\it An if-elseif-else block.}
+\li	\If $[$Condition1$]$
 	\Then
 \li		Blah\dots
-\li	\ElseIf $[$Condition$]$
+\li	\ElseIf $[$Condition2$]$
+	\Then
+\li		Blah\dots
+\li	\ElseIf $[$Condition3$]$
 	\Then
 \li		Blah\dots
 %	\li	\ElseNoIf $[$Condition$]$
@@ -47,6 +54,7 @@
 \li	\Else
 \li		Blah\dots	
 	\End
+\zi \Comment {\it A variable assignment.}
 \li $\id{blah} \gets A[j]$
 \zi	\>	\Comment {\it This is indented with a tab.}
 \zi	\Comment {\it What is the output of this procedure?}
