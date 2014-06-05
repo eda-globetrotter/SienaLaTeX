@@ -1,4 +1,5 @@
-#	This LaTeX file is written by Zhiyang Ong as a template for writing reports.
+#	This is written by Zhiyang Ong as for build automation in the
+#		context of writing reports in LaTeX.
 #
 #	The MIT License (MIT)
 #
@@ -16,33 +17,16 @@
 #
 
 
+
+#	=============================================================
+#	Make targets for build automation with Make (using this Makefile).
+
 latex:
 	pdflatex	report
 	bibtex		report
 	pdflatex	report
 	bibtex		report
 	pdflatex	report
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
