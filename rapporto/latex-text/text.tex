@@ -37,13 +37,50 @@ Random macros from my \LaTeX-specific IDE (or text editor): \vspace{-0.3cm}
 	\item verbatim
 	\item verse
 	\end{enumerate}
+\item Types of headings: \vspace{-0.3cm}
+	\begin{enumerate} \itemsep -2pt
+	\item $\backslash$chapter\{\}
+	\item $\backslash$paragraph\{\}
+	\item $\backslash$subparagraph\{\}
+	\item $\backslash$section\{\}
+	\item $\backslash$subsection\{\}
+	\item $\backslash$subsubsection\{\}
+	\end{enumerate}
+\item To add an entry into the ``Table of Contents'' without it being numbered, try the following: \vspace{-0.3cm}
+	\begin{enumerate} \itemsep -2pt
+	\item $\backslash$addcontentsline\{toc\}\{section\}\{BLAH\}
+	\item $\backslash$section$^{\ast}$\{BLAH\}
+	\end{enumerate}
 \item Insert/import content from another file: $\backslash$input\{RELATIVE PATHNAME\}
 \item Import \LaTeX\ packages: $\backslash$usepackage\{\}
 \item $\backslash$footnote\{\}
 \item $\backslash$marginpar\{\}
 \item $\mathcal{C}$
-\item $\mathit{C}$
-\item \underline{This is good.}
+\item $\mathit{C}$: Caligraphy style font.
+\item \underline{This is good.}: Underline text.
+\item \texttt{This is a statement.} TypeWriter.
+\item \textsf{This is a statement.} Sans Serif font.
+\item \textsl{This is a statement.} Slanted font.
+\item \emph{This is a statement.}
+\item Types of labels: \vspace{-0.3cm}
+	\begin{enumerate} \itemsep -2pt
+	\item ``chp:'' for chapter
+	\item ``sec:'' for section
+	\item ``ssec:'' for subsection
+	\item ``sssec:'' for subsubsection
+	\item ``fig:'' for figure
+	\item ``tab:'' for table
+	\item ``eqn:'' for equation
+	\item ``lst:'' for code listing
+	\item ``defn:'' for definition
+	\item ``thrm:'' for theorem
+	\item ``lem:'' for lemma
+	\item ``crly:'' for corollary
+	\item ``prop:'' for proposition
+	\item ``prf:'' for proof
+	\item ``eg:'' for example
+	\item ``rem:'' for remark
+	\end{enumerate}
 \end{enumerate}
 
 
@@ -62,6 +99,12 @@ An enumeration of items: \vspace{-0.3cm}
 			\end{enumerate}
 		\end{enumerate}
 	\end{enumerate}
+\item 
+\item 
+\item Inserting a horizontal line beneath this item in the list.
+\\ \rule{6in}{.1pt}
+\item 
+\item 
 \end{enumerate}
 
 List of items: \vspace{-0.3cm}
