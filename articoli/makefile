@@ -1,5 +1,5 @@
 #       This is written by Zhiyang Ong as for build automation in the
-#               context of creating resumes/CVs in LaTeX.
+#               context of writing articles in LaTeX.
 #
 #       The MIT License (MIT)
 #

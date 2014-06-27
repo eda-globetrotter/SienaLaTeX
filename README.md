@@ -40,7 +40,7 @@ This repository is organized as follows:
 5)	rapporto: A LaTeX template for reports.  
 6)	scripts: A Ruby script to remove temporary files.  
 
-
+For each subdirectory, a Makefile is provided to typeset the document with LaTeX (and add references, if necessary). 
 
 
 
