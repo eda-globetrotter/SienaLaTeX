@@ -40,9 +40,15 @@ This repository is organized as follows:
 5)	rapporto: A LaTeX template for reports.  
 6)	scripts: A Ruby script to remove temporary files.  
 
-For each subdirectory, a Makefile is provided to typeset the document with LaTeX (and add references, if necessary). 
+For each subdirectory, a Makefile is provided to typeset the document with LaTeX (and add references, if necessary).
 
+Use the Makefile to typeset the LaTeX document.
 
+To do that, try the following on the command line of a UNIX-like operating system: make latex
+
+If the LaTeX typesetting system is not installed on your computer, you can download it for free from either of the following:
+* [LaTeX -- A document preparation system]<http://www.latex-project.org/>
+* [TeX Live]<http://www.tug.org/texlive/>
 
 
 
