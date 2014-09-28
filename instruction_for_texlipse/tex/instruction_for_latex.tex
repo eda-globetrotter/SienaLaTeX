@@ -1,0 +1,87 @@
+\documentclass{memoir}
+\usepackage{fullpage}
+\usepackage{enumitem}
+
+% this file is presented for assignment in scientific writing class 
+% MEEN 653-600 Scientific Writing fall2014
+% 
+% by:
+% amir sohrabi
+
+
+\begin{document}
+
+ 
+\section*{Installing \LaTeX with TeXlipse on Windows 7 x64}
+This instruction is prepared for someone who needs to produce high quality documents using \LaTeX.
+He knows how to install Microsoft word on windows. 
+He has access to internet and knows how to use browser. 
+He knows how to download files from internet and how to run them.
+He must have an administrative access to the computer he is installing TeXlipse onto.
+Computer literacy in general is needed. 
+
+The software that you will need: Tex Live, Eclipse. \\
+Note: \LaTeX has two main distribution Tex Live and MiKTeX, we use Tex Live.  \\ 
+Note: There are many editors for \LaTeX we use TeXlipse.  
+\begin{enumerate}
+  \item Download and install \LaTeX  distribution
+\begin{enumerate}
+  \item Go to website https://www.tug.org/TexLive/acquire-netinstall.html 
+  \item Download and run install-tl-windows.exe
+  \item Choose simple install (big) and click next
+  \item Click install. This will unpack the installer into a temporary location. The installer will show up afterwards. Then click next
+  \item Choose the mirror of your convenience from drop-down menu click next
+  \item Choose the destination folder, remember this folder or write it down for future reference, then click next
+  \item Choose the paper type that you will use for your documents then click next
+  \item Check the installation setting or change them to your convenience and then click install
+  \item Wait until installation completes this step will take some time depending on your system and internet connection
+\end{enumerate}
+\item Download and install Eclipse
+\begin{enumerate}
+  \item Go to https://www.Eclipse.org/downloads/ and choose your favorite Eclipse
+  \item If in doubt which Eclipse you will need, click on windows 32Bit and download it
+  \item Extract the downloaded files into c:\textbackslash  eclipse (this path step is necessaey since the path for some of the files in so long)
+  \item Run Eclipse by double clicking on  c:\textbackslash  eclipse\textbackslash  eclipse.exe
+\end{enumerate}
+\item If faced a error asking for Java Runtime Enviroment follow next step if not disregard next step
+\item Configure Java Runtime Enviroment for Eclipse
+\begin{enumerate}
+  \item Go to from http://www.oracle.com/technetwork/java/javase/downloads/java-se-jre-7-download-432155.html
+  \item Accept the terms and down load JRE from http://download.oracle.com/otn-pub/java/jdk/7/jre-7-windows-x64.exe
+  \item Install JRE after the download was complete
+  \item Find JRE7 in c:\textbackslash  Program Files \textbackslash  Java
+  \item Copy the JRE7 folder to c:\textbackslash  eclipse
+  \item Rename the folder JRE7 to JRE (this will fix the problem for JRE because Eclipse will look for binary files in c:\textbackslash  eclipse \textbackslash jre \textbackslash bin)
+\end{enumerate}
+  \item Install TeXlipse inside Eclipse
+  \begin{enumerate}
+    \item Run Eclipse program 
+    \item Go to the help menu, click on install new software
+    \item Click on add (a dialogue box will show up)
+    \item Choose TeXlipse as name
+    \item Choose http://TeXlipse.sourceforge.net/ as location
+    \item Click next
+  \end{enumerate}
+  \item Make the first Document
+  \begin{enumerate}
+    \item Run Eclipse
+    \item Choose file in the menu 
+    \item Choose TeXlipse project
+    \item Write your document name
+    \item Choose type of your document
+    \item Choose format (Remember the location where you installed Tex Live.) 
+    \item Click on setup build tools make sure all the tools have the .exe (binary) file allocated to them.
+    \item If the build tools are empty, give the location of your Tex Live installation that you have saved in step 1 and click next
+    \item Choose the name for that paths that you are going to work for hen click next
+	\item Look for the text editor. There will be a space for you the document
+    \item Type $\sum F = ma$ after $begin\{document\}$  
+    \item Find your project's name on the left side in project explorer
+    \item Open the project folder
+    \item Open the output folder
+    \item Double click on the pdf file that you have produced and see it    
+  \end{enumerate}
+  
+  \item Finally, read, print, and review the document you have made with \LaTeX
+\end{enumerate}
+
+\end{document}
