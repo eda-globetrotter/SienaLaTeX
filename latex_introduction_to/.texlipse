@@ -1,0 +1,14 @@
+#TeXlipse project settings
+#Sun Sep 21 19:14:36 CDT 2014
+markTmpDer=true
+builderNum=2
+outputDir=pdfs
+makeIndSty=
+bibrefDir=
+outputFormat=pdf
+tempDir=tmp
+mainTexFile=introduction_to_latex.tex
+outputFile=introduction_to_latex.pdf
+langSpell=en
+markDer=true
+srcDir=tex
